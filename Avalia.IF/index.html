@@ -4,7 +4,8 @@
 <head>
   <!--<meta name="viewport" content="width=device-width, initial-scale=1" charset="ISO-8859-1">-->
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link href="css/styles.css" rel="stylesheet" type="text/css"/>
   <title>AVALIF</title>
   <link rel="shortcut icon" href="/IF.png" type="image/png">
   <!-- Latest compiled and minified CSS -->
@@ -40,9 +41,9 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-white mt-5">
-          <h1 class="display-2 d-none d-md-block text-center">Avalia.IF</h1>
+          <h1 class="display-2 d-none d-md-block text-center text-warning"><i class="fa fa-user fa-fw"></i><i class="fa fa-user fa-fw text-primary"></i>Avalia.IF</h1>
           <h1 class="display-4 d-block d-md-none text-center">Avalia.IF</h1>
-          <p class="text-center">Avaliação de professores do IFMG Campus Sabará </p>
+          <p class="text-center text-success" style="">Avaliação de professores do IFMG Campus Sabará </p>
           <div class="form-group"><label></label><input class="form-control" id="myInput" type="text" placeholder="Pesquisar.."></div><i class="d-block fa fa-angle-down pt-5 fa-3x"></i>
         </div>
       </div>
@@ -75,7 +76,7 @@
         <tbody id="myTable">
           <tr>
             <th>1</th>
-            <td><a href="#" data-toggle="modal" data-target="#myModalJohn">John</a></td>
+            <td><a href="#" data-toggle="modal" data-target="#myModalJohn" class="text-warning">John</a></td>
             <td>
               <div class="rate">
                 <input type="radio" id="star5" name="rate" value="5">
@@ -149,7 +150,7 @@
           </tr>
           <tr>
             <th>2</th>
-            <td><a href="#" data-toggle="modal" data-target="#myModalRick">Rick</a></td>
+            <td><a href="#" data-toggle="modal" data-target="#myModalRick" class="text-warning">Rick</a></td>
             <td>
               <div class="rate">
                 <input type="radio" id="star95" name="rate" value="5">
@@ -223,7 +224,7 @@
           </tr>
           <tr>
             <th>3</th>
-            <td><a href="#" data-toggle="modal" data-target="#myModalMary">Mary</a></td>
+            <td><a href="#" data-toggle="modal" data-target="#myModalMary" class="text-warning">Mary</a></td>
             <td>
               <div class="rate">
                 <input type="radio" id="star35" name="rate" value="5">
@@ -297,7 +298,7 @@
           </tr>
           <tr>
             <th>4</th>
-            <td><a href="#" data-toggle="modal" data-target="#myModalJuly">July</a></td>
+            <td><a href="#" data-toggle="modal" data-target="#myModalJuly" class="text-warning">July</a></td>
             <td>
               <div class="rate">
                 <input type="radio" id="star65" name="rate" value="5">
@@ -372,7 +373,9 @@
         </tbody>
       </table>
     </div>
-    <div class="py-5 text-center text-white" style="	background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(a93ea89e-0503-4034-a775-c46c73c096bf.png);	background-position: center center, center center;	background-size: cover, cover;	background-repeat: repeat, repeat;">
+
+
+    <div class="py-5 text-center text-white" style="	background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(img/if.png);	background-position: center center, center center;	background-size: cover, cover;	background-repeat: repeat, repeat;">
       <div class="container">
         <div class="row">
           <div class="mx-auto col-md-12">
@@ -380,30 +383,32 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4 col-md-6 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="pp.jpg" alt="Card image cap" width="200">
+          <div class="col-lg-4 col-md-6 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="img/ta.jpg" alt="Card image cap" width="200">
             <h4> <b>Tares Orlande</b></h4>
             <p class="mb-0">CEO</p>
           </div>
-          <div class="col-lg-4 col-md-6 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="pp (1).jpg" alt="Card image cap" width="200">
+          <div class="col-lg-4 col-md-6 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="img/sl.jpg" alt="Card image cap" width="200">
             <h4> <b>Matheus Saliba</b></h4>
             <p class="mb-0">Designer</p>
           </div>
-          <div class="col-lg-4 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="pp (2).jpg" width="200">
+          <div class="col-lg-4 p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="img/le.jpg" width="200">
             <h4> <b>Leando H. Sousa</b></h4>
             <p class="mb-0">Architect</p>
           </div>
         </div>
       </div>
     </div>
+
+
     <div class="container">
     </div>
     <!-- The Modal John-->
-    <div class="modal fade" id="myModalJohn">
+    <div class="modal fade text-primary bg-dark" id="myModalJohn">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <!-- Modal Header -->
           <div class="modal-header">
-            <h4 class="modal-title">John Doe</h4>
+            <h4 class="modal-title text-body">John Doe</h4>
             <button type="button" class="close" data-dismiss="modal">×</button>
           </div>
           <!-- Modal body -->
@@ -415,10 +420,10 @@
               <div class="col-8 table-responsive" style="background-color:green;">
                 <div class="container">
                   <div class="card" style="width:400px">
-                    <img class="card-img-top" src="./profile/img_avatar1.png" alt="Card image" style="width:100%">
+                    <img class="card-img-top" src="./img/img_avatar1.png" alt="Card image" style="width:100%">
                     <div class="card-body">
-                      <h4 class="card-title">John Doe</h4>
-                      <p class="card-text">Algum exemplo de texto sobre esta pessoa esta inserido aqui (imagine)</p>
+                      <h4 class="card-title text-body">John Doe</h4>
+                      <p class="card-text text-body">Algum exemplo de texto sobre esta pessoa esta inserido aqui (imagine)</p>
                       <a href="#" class="btn btn-primary">Ver Perfil</a>
                     </div>
                   </div>
@@ -437,7 +442,7 @@
       </div>
     </div>
     <!-- The Modal John-->
-    <div class="modal fade" id="myModalRick">
+    <div class="modal fade bg-dark" id="myModalRick">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <!-- Modal Header -->
@@ -454,7 +459,7 @@
               <div class="col-8 table-responsive" style="background-color:green;">
                 <div class="container">
                   <div class="card" style="width:400px">
-                    <img class="card-img-top" src="./profile/img_avatar1.png" alt="Card image" style="width:100%">
+                    <img class="card-img-top" src="./img/img_avatar1.png" alt="Card image" style="width:100%">
                     <div class="card-body">
                       <h4 class="card-title">Rick Zed</h4>
                       <p class="card-text">Algum exemplo de texto sobre esta pessoa esta inserido aqui (imagine)</p>
@@ -476,7 +481,7 @@
       </div>
     </div>
     <!-- The Modal Mary-->
-    <div class="modal fade" id="myModalMary">
+    <div class="modal fade bg-dark" id="myModalMary">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <!-- Modal Header -->
@@ -493,7 +498,7 @@
               <div class="col-8 table-responsive" style="background-color:green;">
                 <div class="container">
                   <div class="card" style="width:400px">
-                    <img class="card-img-top" src="./profile/img_avatar2.png" alt="Card image" style="width:100%">
+                    <img class="card-img-top" src="./img/img_avatar2.png" alt="Card image" style="width:100%">
                     <div class="card-body">
                       <h4 class="card-title">Mary Jo</h4>
                       <p class="card-text">Algum exemplo de texto sobre esta pessoa esta inserido aqui (imagine)</p>
@@ -515,7 +520,7 @@
       </div>
     </div>
     <!-- The Modal July-->
-    <div class="modal fade" id="myModalJuly">
+    <div class="modal fade bg-dark" id="myModalJuly">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <!-- Modal Header -->
@@ -532,7 +537,7 @@
               <div class="col-8 table-responsive" style="background-color:green;">
                 <div class="container">
                   <div class="card" style="width:400px">
-                    <img class="card-img-top" src="./profile/img_avatar2.png" alt="Card image" style="width:100%">
+                    <img class="card-img-top" src="./img/img_avatar2.png" alt="Card image" style="width:100%">
                     <div class="card-body">
                       <h4 class="card-title">July Joe</h4>
                       <p class="card-text">Algum exemplo de texto sobre esta pessoa esta inserido aqui (imagine)</p>
@@ -553,6 +558,8 @@
         </div>
       </div>
     </div>
+
+
     <script>
       $(document).ready(function() {
         $('[data-toggle="tooltip"]').tooltip();
@@ -569,5 +576,6 @@
       });
     </script>
   </div>
-  </body>
+</body>
+
 </html>
